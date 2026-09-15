@@ -883,6 +883,302 @@ function showAnswer(type){
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>지문 핵심 추적 훈련 — Perception Translating Tools</title>
+<style>
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:#f4f1ea;color:#242424;
+    font-family:"Noto Sans KR","Malgun Gothic",Arial,sans-serif;line-height:1.7
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:28px}
+  .hero{
+    background:#1d2940;color:#fff;border-radius:22px;padding:30px 34px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12)
+  }
+  .hero h1{margin:0 0 8px;font-size:30px}
+  .hero p{margin:0;color:#dfe6f2}
+  .rule{
+    margin-top:18px;background:#fff3cd;color:#553d00;border-left:6px solid #e0a800;
+    padding:15px 18px;border-radius:10px;font-weight:700
+  }
+  section{
+    background:#fff;border-radius:18px;margin-top:22px;padding:24px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07)
+  }
+  h2{margin:0 0 16px;color:#1d2940;font-size:22px}
+  h3{color:#344767;margin-bottom:8px}
+  .passage{font-family:Georgia,"Times New Roman",serif;font-size:18px}
+  .sent{
+    padding:16px 18px;margin:12px 0;border-radius:12px;border:1px solid #ddd;
+    transition:.2s;background:#fafafa
+  }
+  .sent:hover{transform:translateX(3px);background:#f4f7fc}
+  .num{
+    display:inline-flex;width:30px;height:30px;border-radius:50%;
+    align-items:center;justify-content:center;background:#1d2940;color:#fff;
+    font:700 14px Arial;margin-right:8px;vertical-align:middle
+  }
+  .tag{
+    display:inline-block;padding:3px 9px;border-radius:999px;font-size:12px;
+    margin:3px 4px 3px 0;font-weight:700
+  }
+  .topic{background:#e6edf8;color:#28436e}
+  .shift{background:#ffe7b3;color:#7a5000}
+  .core{background:#dff3e6;color:#24613b}
+  .warning{background:#f7dfe2;color:#8b2836}
+  .flow{
+    display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+    font-weight:800;font-size:17px
+  }
+  .node{
+    background:#edf1f6;border:2px solid #b8c2d0;padding:9px 13px;border-radius:12px
+  }
+  .node.key{background:#dff3e6;border-color:#6eaf84}
+  .arrow{font-size:24px;color:#667}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .card{
+    border:1px solid #ddd;border-radius:14px;padding:17px;background:#fcfcfc
+  }
+  .card strong{color:#1d2940}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  th,td{border:1px solid #ddd;padding:11px;vertical-align:top}
+  th{background:#eef1f5;color:#1d2940}
+  .highlight{background:#fff0a8;padding:1px 4px;border-radius:4px}
+  .red{color:#a22;font-weight:700}
+  .green{color:#17633a;font-weight:800}
+  .interactive button{
+    border:0;border-radius:10px;background:#1d2940;color:#fff;padding:10px 15px;
+    cursor:pointer;margin:4px;font-weight:700
+  }
+  .interactive button:hover{opacity:.88}
+  #answer{display:none;margin-top:14px;padding:16px;background:#eef8f0;border-radius:12px}
+  .mini{font-size:14px;color:#666}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}.wrap{padding:15px}.hero{padding:24px}.passage{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>지문에서 핵심을 추적하는 법</h1>
+  <p>사례 지문: <b>For many centuries, humans have taken advantage of tools that translate and bring into our perception natural phenomena that we can't perceive with our senses.</b></p>
+  <div class="rule">
+    핵심 원칙: <b>첫 문장의 'tools'라는 주어 자체에 멈추지 않는다.</b><br>
+    도구가 **어떠한 방식(Amplifying → Expanding → Measuring No-capacity Properties)**으로 인간 감각의 한계를 단계적으로 극복하고 관찰 가능하게 전환하는지 추적한다.
+  </div>
+</header>
+
+<section>
+<h2>1. 먼저 전체 지문의 관심 대상 이동을 한 줄로 압축하기</h2>
+<div class="flow">
+  <span class="node">perception-translating tools</span>
+  <span class="arrow">→</span>
+  <span class="node">1단계: amplifying existing signals</span>
+  <span class="arrow">→</span>
+  <span class="node">2단계: turning unperceivable signals</span>
+  <span class="arrow">→</span>
+  <span class="node">expanding current sense reach</span>
+  <span class="arrow">→</span>
+  <span class="node key">3단계: measuring no sensory capacity properties</span>
+</div>
+<p class="mini">
+  첫 문장의 표면적 출발점은 <b>Perception-translating tools (지각 번역 도구)</b>이다. 글은 도구가 신호를 변환하는 방식을 
+  <b>단순 증폭(Amplifying, 2번) → 감각 범위 확장(Expanding reach, 3~4번) → 무감각 영역의 측정 및 변환(Measuring no capacity, 5번)</b>으로 위계를 올리며 기능적 스펙트럼을 체계적으로 확장한다.
+</p>
+</section>
+
+<section>
+<h2>2. 문장별 관심 대상 추적 (전체 5개 문장 완벽 추적)</h2>
+<div class="passage">
+
+<div class="sent">
+<span class="num">1</span>
+<b>For many centuries, humans have taken advantage of tools that translate and bring into our perception natural phenomena that we can't perceive with our senses.</b>
+<br><span class="tag topic">출발점</span>
+<span class="tag topic">Perception Tools</span>
+<p><b>주어:</b> humans / tools → <b>실제 관심 대상:</b> 감각할 수 없는 자연 현상을 지각 영역으로 가져오는 도구. 지문 전체를 관통하는 대전제이자 총론(Generalization)을 제시한다.</p>
+</div>
+
+<div class="sent">
+<span class="num">2</span>
+<b>In some cases, this consists of simply amplifying signals that feed into our normal sensory inputs (e.g., telescopes can bring into clear view that which is too far away for our eyes to perceive on their own).</b>
+<br><span class="tag shift">1단계: 증폭</span>
+<span class="tag topic">Amplifying</span>
+<p><b>구체화 (Level 1):</b> 도구의 첫 번째 작동 방식. <b>기존 감각 입력의 단순 증폭(simply amplifying)</b>. 망원경예시를 통해 눈으로 볼 수 있는 감각 신호를 크게 키워 명확하게 만드는 가장 기본 수준의 도구를 설명한다.</p>
+</div>
+
+<div class="sent">
+<span class="num">3</span>
+<b>Other instruments turn signals that we cannot perceive into ones that we can observe.</b>
+<br><span class="tag shift">2단계: 변환</span>
+<span class="tag shift">Turn into observable</span>
+<p><b>논지 전환 (Level 2):</b> 단순 증폭을 넘어 <b>지각 불가능한 신호를 관찰 가능한 신호로 변환(turn signals... into ones that we can observe)</b>하는 고차원 도구로 도약한다.</p>
+</div>
+
+<div class="sent">
+<span class="num">4</span>
+<b>Some of these take the form of expanding the reach of our current senses, such as creating visible images based on the ultraviolet spectrum of light or changing sounds that are normally outside the range of what human ears can hear into audible signals.</b>
+<br><span class="tag shift">2단계 구체화</span>
+<span class="tag core">Expanding reach</span>
+<p><b>예시 및 세부화:</b> 3번 문장의 변환 기능을 구체화한다. 기존 감각의 <b>범위 확장(expanding the reach)</b>으로, 가시광선 밖의 자외선(UV)을 가시 이미지로 바꾸거나, 가청 주파수 밖의 음파를 가청 신호(audible signals)로 재구성한다.</p>
+</div>
+
+<div class="sent">
+<span class="num">5</span>
+<b>Alternatively, some instruments measure properties for which we have no sensory capacity at all and change them into that which we can observe.</b>
+<br><span class="tag core">3단계: 최고 단계 수렴</span>
+<span class="tag core">No sensory capacity</span>
+<p><b>최종 심화 (Level 3):</b> 대안적/최상위 단계(Alternatively)의 도구. 인간에게 <b>감각 수용 능력 자체가 전혀 없는 속성(no sensory capacity at all)</b>을 측정하여 관찰 가능한 형태로 완전히 새로 변환한다. 글의 분류 체계가 최고 난이도의 도구 기능으로 완전 수렴한다.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>3. 이 지문에서 ‘첫 주어’에 속으면 어떻게 되는가?</h2>
+<table>
+<tr>
+<th>추적 오류</th><th>잘못된 생각</th><th>실제 추적</th>
+</tr>
+<tr>
+<td>첫 문장의 주어만 기억</td>
+<td class="red">Telescopes나 UV 이미지 등 과학 도구의 발명 역사를 다룬 글이다.</td>
+<td class="green">도구의 발명사가 아닌, 인간 감각 한계를 극복하는 도구의 3단계 기능적 변환 방식이 주제임.</td>
+</tr>
+<tr>
+<td>2번 문장의 예시만 추적</td>
+<td class="red">Telescopes가 나오므로 ‘시력 향상 및 망원경의 원리’가 주제다.</td>
+<td class="green">망원경은 1단계 단순 증폭(amplifying)을 설명하기 위한 단순 하위 예시일 뿐임.</td>
+</tr>
+<tr>
+<td>4번 문장의 표면적 소재에 갇힘</td>
+<td class="red">Ultraviolet spectrum 및 audible signals가 나오므로 ‘빛과 소리의 파장 과학’이 주제다.</td>
+<td class="green">자외선과 가청 범위 밖 소리는 감각 범위 확장(expanding reach)을 설명하는 구체적 예시임.</td>
+</tr>
+<tr>
+<td>단계적 위계 구분 실패</td>
+<td class="red">모든 도구가 똑같이 감각을 도와준다는 단순한 내용이다.</td>
+<td class="green">단순 증폭(Level 1) → 감각 범위 확장(Level 2) → 감각 능력이 전혀 없는 속성의 측정(Level 3)으로 고도화되는 세분화된 체계임.</td>
+</tr>
+</table>
+</section>
+
+<section>
+<h2>4. 문장 연결고리를 보면 핵심이 더 선명해진다</h2>
+<div class="grid">
+<div class="card">
+<h3>① Structural Signal (In some cases → Other → Alternatively)</h3>
+<p>
+<b>In some cases (1단계) → Other instruments (2단계) → Alternatively (3단계)</b>
+</p>
+<p class="green">도구의 변환 기능을 3가지 위계 수준으로 깔끔하게 분류하여 전개함.</p>
+</div>
+<div class="card">
+<h3>② Action Verbs of Transformation</h3>
+<p>
+<b>amplifying → turning signals into observable → expanding reach → measuring & changing</b>
+</p>
+<p class="green">지각 불가능한 자연 현상을 관찰 가능하게 가공하는 동사들의 유기적 연결.</p>
+</div>
+<div class="card">
+<h3>③ Spectrum of Human Capacity</h3>
+<p>
+<b>normal sensory inputs → outside the range → no sensory capacity at all</b>
+</p>
+<p class="green">인간 감각 한계선의 범주가 점점 '전혀 감각할 수 없는 영역'으로 확대됨.</p>
+</div>
+<div class="card">
+<h3>④ Core Functional Goal</h3>
+<p>
+<b>bring into our perception / change them into that which we can observe</b>
+</p>
+<p class="green">모든 도구의 궁극적 목표: '관찰 불가능'을 '관찰 가능'으로 변환함.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>5. 핵심 추적 알고리즘</h2>
+<table>
+<tr><th>Step</th><th>질문</th><th>이 지문에서의 답</th></tr>
+<tr><td>1</td><td>첫 문장은 무엇을 소개하는가?</td><td>Tools that translate unperceivable phenomena into perception (지각 불가능한 자연현상을 변환하는 도구)</td></tr>
+<tr><td>2</td><td>도구의 첫 번째(가장 기본) 기능은?</td><td>1단계: Amplifying normal sensory inputs (기존 감각 신호의 단순 증폭 - 예: 망원경)</td></tr>
+<tr><td>3</td><td>두 번째 기능으로의 전환은?</td><td>2단계: Other instruments → Turning unperceivable signals into observable ones</td></tr>
+<tr><td>4</td><td>두 번째 기능은 어떻게 작동하는가?</td><td>Expanding current senses reach (자외선 가시화, 가청 범위 밖 소리의 음향화)</td></tr>
+<tr><td>5</td><td>세 번째(최상위) 기능은 무엇인가?</td><td>Alternatively → Measuring properties with no sensory capacity at all (감각 능력 자체가 없는 속성의 측정)</td></tr>
+<tr><td>6</td><td>세 가지 기능의 공통점은?</td><td>인간의 관찰 가능 영역(observable domain)으로 신호를 바꾸는 것.</td></tr>
+<tr><td>7</td><td>필자가 제시하는 도구의 분류적 본질은?</td><td>인간 감각 한계를 극복하고 확장·측정해 주는 단계별 변환 매개체.</td></tr>
+<tr><td>8</td><td>따라서 글의 핵심은?</td><td><b>자연 현상을 인지하게 해주는 도구들은 단순 신호 증폭에서부터 감각 범위 확장, 나아가 감각 기관이 전혀 없는 속성의 측정에 이르기까지 지각 불가능한 신호를 관찰 가능하게 변환해 준다.</b></td></tr>
+</table>
+</section>
+
+<section class="interactive">
+<h2>6. 학생 훈련 — “이 지문의 최종 핵심은 무엇인가?”</h2>
+<p>아래 버튼을 눌러 정답과 오답 이유를 확인해 보세요.</p>
+<button onclick="showAnswer('telescope')">① The history of optical telescopes</button>
+<button onclick="showAnswer('spectrum')">② Physical properties of the ultraviolet spectrum</button>
+<button onclick="showAnswer('tools')">③ Categorized mechanisms of tools translating unperceivable phenomena</button>
+<button onclick="showAnswer('hearing')">④ Human hearing capacity and sound waves</button>
+<div id="answer"></div>
+</section>
+
+<section>
+<h2>7. 최종 압축 지도</h2>
+<div class="flow">
+  <span class="node">TRANSLATING TOOLS</span>
+  <span class="arrow">→</span>
+  <span class="node">1. AMPLIFYING (Telescopes)</span>
+  <span class="arrow">→</span>
+  <span class="node">2. EXPANDING REACH (UV / Audio)</span>
+  <span class="arrow">→</span>
+  <span class="node key">3. MEASURING NO-CAPACITY PROPERTIES</span>
+</div>
+<p style="margin-top:18px;font-size:18px">
+  <b>출발점</b>은 도구의 전반적 정의이지만, <b>전개 과정</b>에서 단순 증폭 → 범위 확장 → 무감각 속성 측정이라는 3단계 분류 체계로 완성된다.
+  따라서 <span class="highlight">망원경이나 자외선 같은 단순 하위 예시에 현혹되면 안 된다.</span>
+</p>
+</section>
+
+<section>
+<h2>8. 수능 독해용 한 줄 공식</h2>
+<div style="font-size:22px;text-align:center;padding:18px;background:#f0f3f7;border-radius:14px;font-weight:800">
+  예시(망원경/자외선)에 갇히지 말고 → 분류 표지어(In some cases / Other / Alternatively)를 통해 → 도구 변환 기능의 스펙트럼을 잡아라.
+</div>
+<p style="text-align:center;margin-bottom:0">
+  <b>핵심 = 단일 소재</b>가 아니라
+  <b>지각할 수 없는 자연 현상을 관찰 가능하게 만드는 도구들의 단계별 변환 메커니즘</b>
+</p>
+</section>
+
+</div>
+
+<script>
+function showAnswer(type){
+  const box=document.getElementById("answer");
+  box.style.display="block";
+  if(type==="telescope"){
+    box.innerHTML="<b>① The history of optical telescopes — 오답 (하위 예시 함정).</b><br>망원경은 2번 문장에서 1단계 단순 증폭(amplifying)을 설명하기 위해 쓰인 단편적인 예시일 뿐입니다.";
+  }else if(type==="spectrum"){
+    box.innerHTML="<b>② Physical properties of the ultraviolet spectrum — 오답 (구체적 소재 함정).</b><br>자외선 스펙트럼은 4번 문장에서 감각 범위 확장(expanding reach)을 설명하는 예시 중 하나에 불과합니다.";
+  }else if(type==="tools"){
+    box.innerHTML="<b>③ Categorized mechanisms of tools translating unperceivable phenomena — 정답 (최종 통합 수렴점).</b><br>지각 불가능한 자연 현상을 단순 증폭, 범위 확장, 무감각 속성 측정으로 나누어 관찰 가능하게 변환하는 도구의 분류적 메커니즘을 완벽히 아우르는 주제입니다.";
+  }else{
+    box.innerHTML="<b>④ Human hearing capacity and sound waves — 오답 (부분적 예시 함정).</b><br>청각 범위 밖의 소리를 들을 수 있게 바꾸는 것은 4번 문장의 세부 예시 중 하나일 뿐 지문 전체의 주제가 아닙니다.";
+  }
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>지문 핵심 추적 훈련 — Animal Experimentation & Medical Advances</title>
 <style>
   *{box-sizing:border-box}
